@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function TodayPage() {
-  return (
-    <></>
-  )
+  return <div>TodayPage</div>;
 }
 
-export default TodayPage
+export default TodayPage;
