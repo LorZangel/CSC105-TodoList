@@ -12,7 +12,7 @@ function CardList({todo, setState, state}) {
     <Box sx={wrapperStyle}>
         <Checkbox onChange={(e) => handleCheck(e)} />
         <div>{todo}</div>
-    </Box>
+        </Box>
     );
 }
 

@@ -1,16 +1,23 @@
+import Home from "./components/Home"
+import Todo from "./components/Todo"
+
+import { Route, Routes } from "react-router-dom"
 import "./App.css"
-import TodoPage from "./pages/Todopage"
+import TodoPage from "./pages/TodoPage"
+import TodayPage from "./pages/TodayPage"
+import CalendarPage from "./pages/Calendar"
+import HomePage from "./pages/Homepage"
 
 function App() {
   return (
     <div className="App">
-      {/* <div className="home">
-        <Home />
-      </div>
-      <div className="todo">
-        <Todo />
-      </div> */}
-      <TodoPage />
+      <Routes>
+          <Route exect path="/" element={<Homepage />} />
+          <Route path="/todo" element={<TodoPage />} />
+          <Route path="/today" element={<TodayPage />} />
+          <Route path="/calendar" element={<Calendar />} />
+
+      </Routes>
     
     </div>
   )
